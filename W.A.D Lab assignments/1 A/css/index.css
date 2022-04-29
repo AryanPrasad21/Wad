@@ -1,0 +1,212 @@
+    @import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+*{
+	list-style: none;
+	text-decoration: none;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Open Sans', sans-serif;
+}
+
+body{
+	background: #f5f6fa;
+}
+
+.wrapper .sidebar{
+	background: rgb(5, 68, 104);
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 225px;
+	height: 100%;
+	padding: 20px 0;
+	transition: all 0.5s ease;
+}
+
+.wrapper .sidebar .profile{
+	margin-bottom: 30px;
+	text-align: center;
+}
+
+.wrapper .sidebar .profile img{
+	display: block;
+	width: 100px;
+	height: 100px;
+    border-radius: 50%;
+	margin: 0 auto;
+}
+
+.wrapper .sidebar .profile h3{
+	color: #ffffff;
+	margin: 10px 0 5px;
+}
+
+.wrapper .sidebar .profile p{
+	color: rgb(206, 240, 253);
+	font-size: 14px;
+}
+
+.wrapper .sidebar ul li a{
+	display: block;
+	padding: 13px 30px;
+	border-bottom: 1px solid #10558d;
+	color: rgb(241, 237, 237);
+	font-size: 88%;
+	position: relative;
+
+}
+
+.wrapper .sidebar ul li a .icon{
+	color: #dee4ec;
+	width: 30px;
+	display: inline-block;
+	align: center
+}
+
+ 
+
+.wrapper .sidebar ul li a:hover,
+.wrapper .sidebar ul li a.active{
+	color: #0c7db1;
+
+	background:white;
+    border-right: 2px solid rgb(5, 68, 104);
+}
+
+.wrapper .sidebar ul li a:hover .icon,
+.wrapper .sidebar ul li a.active .icon{
+	color: #0c7db1;
+}
+
+.wrapper .sidebar ul li a:hover:before,
+.wrapper .sidebar ul li a.active:before{
+	display: block;
+}
+
+.wrapper .section{
+	width: calc(100% - 225px);
+	margin-left: 225px;
+	transition: all 0.5s ease;
+}
+
+.wrapper .section .top_navbar{
+	background: rgb(7, 105, 185);
+	height: 50px;
+	display: flex;
+	align-items: center;
+	padding: 0 30px;
+ 
+}
+
+.wrapper .section .top_navbar .hamburger a{
+	font-size: 28px;
+	color: #f4fbff;
+}
+
+.wrapper .section .top_navbar .hamburger a:hover{
+	color: #a2ecff;
+}
+
+ .wrapper .section .container{
+	margin: 30px;
+	background: #fff;
+	padding: 50px;
+	line-height: 28px;
+}
+
+body.active .wrapper .sidebar{
+	left: -225px;
+}
+
+body.active .wrapper .section{
+	margin-left: 0;
+	width: 100%;
+}
+
+/* Make sure that padding behaves as expected */
+* {box-sizing:border-box}
+
+/* Container for skill bars */
+.container {
+  width: 100%; /* Full width */
+  background-color: #ddd; /* Grey background */
+}
+
+.skills {
+  text-align: right; /* Right-align text */
+  padding-top: 10px; /* Add top padding */
+  padding-bottom: 10px; /* Add bottom padding */
+  color: white; /* White text color */
+}
+
+.html {width: 90%; background-color: #04AA6D;} /* Green */
+.css {width: 80%; background-color: #2196F3;} /* Blue */
+.js {width: 65%; background-color: #f44336;} /* Red */
+.php {width: 60%; background-color: #808080;} /* Dark Grey */
+
+
+
+
+input[type=text], select, textarea{
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  resize: vertical;
+}
+
+/* Style the label to display next to the inputs */
+label {
+  padding: 12px 12px 12px 0;
+  display: inline-block;
+}
+
+/* Style the submit button */
+input[type=submit] {
+  background-color: #0c7db1;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  float: right;
+}
+
+/* Style the container */
+.container f{
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+
+/* Floating column for labels: 25% width */
+.col-25 {
+  float: left;
+  width: 25%;
+  margin-top: 6px;
+}
+
+/* Floating column for inputs: 75% width */
+.col-75 {
+  float: left;
+  width: 75%;
+  margin-top: 6px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .col-25, .col-75, input[type=submit] {
+    width: 100%;
+    margin-top: 0;
+  }
+}
+
